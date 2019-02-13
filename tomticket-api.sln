@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tomticket-api", "tomticket-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tomticket-api-tests", "tomticket-api-tests\tomticket-api-tests.csproj", "{EC563359-2CC4-477F-AC62-726A5F0A7FBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "colorfy", "..\utils\fzkutils\colorfy.csproj", "{A32385AC-79EF-417B-9363-6EAA7284D2C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "colorfy", "colorfy\colorfy.csproj", "{A32385AC-79EF-417B-9363-6EAA7284D2C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
