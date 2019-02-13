@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tomticket-api", "tomticket-api\tomticket-api.csproj", "{1367DFC6-1BD9-4AA1-856B-136827E0C095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tomticket-api-tests", "tomticket-api-tests\tomticket-api-tests.csproj", "{EC563359-2CC4-477F-AC62-726A5F0A7FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "colorfy", "..\utils\fzkutils\colorfy.csproj", "{A32385AC-79EF-417B-9363-6EAA7284D2C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1367DFC6-1BD9-4AA1-856B-136827E0C095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1367DFC6-1BD9-4AA1-856B-136827E0C095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1367DFC6-1BD9-4AA1-856B-136827E0C095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1367DFC6-1BD9-4AA1-856B-136827E0C095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC563359-2CC4-477F-AC62-726A5F0A7FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC563359-2CC4-477F-AC62-726A5F0A7FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC563359-2CC4-477F-AC62-726A5F0A7FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC563359-2CC4-477F-AC62-726A5F0A7FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32385AC-79EF-417B-9363-6EAA7284D2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32385AC-79EF-417B-9363-6EAA7284D2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32385AC-79EF-417B-9363-6EAA7284D2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32385AC-79EF-417B-9363-6EAA7284D2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A59EF11-7C75-40D5-81A7-B1FD8526E75E}
+	EndGlobalSection
+EndGlobal
