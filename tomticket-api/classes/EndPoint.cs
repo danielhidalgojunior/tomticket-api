@@ -23,7 +23,7 @@ namespace tomticket_api
             get
             {
                 if (ClientId == null) return null;
-                return $"https://api.tomticket.com/criar_acesso_cliente/{Token}/{ClientId}";
+                return $"https://api.tomticket.com/criar_acesso_cliente/{Token}";
             }
         }
 

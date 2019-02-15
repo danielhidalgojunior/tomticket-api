@@ -18,8 +18,8 @@ namespace tomticket_api.models
         [JsonProperty("atendente_fim")]
         public string EndStatusAttendant { get; set; }
         [JsonProperty("inicio")]
-        public DateTime CreateDate { get; set; }
+        public string CreateDate { get; set; }
         [JsonProperty("fim")]
-        public DateTime EndDate { get; set; }
+        public string EndDate { get; set; }
     }
 }

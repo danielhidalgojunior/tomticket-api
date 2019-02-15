@@ -16,12 +16,12 @@ namespace tomticket_api.models
         [JsonProperty("atendente")]
         public string Attendant { get; set; }
         [JsonProperty("data_hora")]
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
         [JsonProperty("hora_inicio")]
-        public DateTime StartMessageDate { get; set; }
+        public string StartMessageDate { get; set; }
         [JsonProperty("Hora_fim")]
-        public DateTime EndMessageDate { get; set; }
+        public string EndMessageDate { get; set; }
         [JsonProperty("anexos")]
-        public AttachmentModel Attachments { get; set; }
+        public IEnumerable<AttachmentModel> Attachments { get; set; }
     }
 }

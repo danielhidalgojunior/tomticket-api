@@ -57,7 +57,7 @@ namespace tomticket_api.models
             return obj;
         }
 
-        public string GetEasyAccessUrl(string clientid)
+        public string GetEasyAccessUrl()
         {
             var content = HttpHandler.BuildMultiPartForm
                 (
@@ -65,7 +65,7 @@ namespace tomticket_api.models
                     new MultipartFormItem(new StringContent("2"), "tipo_identificacao")
                 );
 
-            var json = HttpHandler.PostResponse(content, new EndPoint(TomTicket.Token, clientid).ClientEasyAccessEndPoint);
+            var json = HttpHandler.PostResponse(content, new EndPoint(TomTicket.Token, ClientId).ClientEasyAccessEndPoint);
             var obj = json.ToObject<EasyAccessResponseModel>();
 
             return obj.Url;

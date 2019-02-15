@@ -63,6 +63,7 @@
     <Compile Include="models\StatusHistory.cs" />
     <Compile Include="models\TicketListResponseModel.cs" />
     <Compile Include="models\TicketModel.cs" />
+    <Compile Include="models\TicketQueryOption.cs" />
     <Compile Include="models\TicketResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TomTicket.cs" />

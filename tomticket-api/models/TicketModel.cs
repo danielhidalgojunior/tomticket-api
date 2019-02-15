@@ -26,27 +26,27 @@ namespace tomticket_api.models
         [JsonProperty("nomeorganizacao")]
         public string OrganizationName { get; set; }
         [JsonProperty("prioridade")]
-        public int Priority { get; set; }
+        public int? Priority { get; set; }
         [JsonProperty("tipochamado")]
         public string TicketType { get; set; }
         [JsonProperty("tempotrabalho")]
-        public int WorkedTime { get; set; }
+        public int? WorkedTime { get; set; }
         [JsonProperty("tempoabertura")]
-        public int OpeningTime { get; set; }
+        public int? OpeningTime { get; set; }
         [JsonProperty("data_criacao")]
-        public DateTime CreatedDate { get; set; }
+        public string CreatedDate { get; set; }
         [JsonProperty("deadline")]
-        public DateTime Deadline { get; set; }
+        public string Deadline { get; set; }
         [JsonProperty("valoritemhora")]
-        public float HourValue { get; set; }
+        public float? HourValue { get; set; }
         [JsonProperty("valoritemhoraextra")]
-        public float ExtraHourValue { get; set; }
+        public float? ExtraHourValue { get; set; }
         [JsonProperty("valorfinal")]
-        public float FinalValue { get; set; }
+        public float? FinalValue { get; set; }
         [JsonProperty("valorfinalextra")]
-        public float ExtraFinalValue { get; set; }
+        public float? ExtraFinalValue { get; set; }
         [JsonProperty("valorfinalbruto")]
-        public float RawFinalVlaue { get; set; }
+        public float? RawFinalVlaue { get; set; }
         [JsonProperty("avaliadoproblemaresolvido")]
         public string ProblemSolved { get; set; }
         [JsonProperty("avaliadoatendimento")]
@@ -56,7 +56,7 @@ namespace tomticket_api.models
         [JsonProperty("ultimasituacao")]
         public string LastSituationCode { get; set; }
         [JsonProperty("dataultimasituacao")]
-        public DateTime LastSituationDate { get; set; }
+        public string LastSituationDate { get; set; }
         [JsonProperty("descsituacao")]
         public string LastSituationDescription { get; set; }
         [JsonProperty("categoria")]
@@ -68,22 +68,22 @@ namespace tomticket_api.models
         [JsonProperty("status")]
         public string Status { get; set; }
         [JsonProperty("dataultimostatus")]
-        public DateTime StatusLastDate { get; set; }
+        public string StatusLastDate { get; set; }
         [JsonProperty("anexos")]
         public IEnumerable<AttachmentModel> Attachments { get; set; }
         [JsonProperty("historico")]
-        public HistoryModel History { get; set; }
+        public IEnumerable<HistoryModel> Replies { get; set; }
         [JsonProperty("campospersonalizados")]
-        public CustomFieldModel CustomFieldsStart { get; set; }
+        public IEnumerable<CustomFieldModel> CustomFieldsStart { get; set; }
         [JsonProperty("campospersonalizados_finalizados")]
-        public CustomFieldModel CustomFieldsEnd { get; set; }
+        public IEnumerable<CustomFieldModel> CustomFieldsEnd { get; set; }
         [JsonProperty("historico_status")]
-        public StatusHistoryModel StatusHistory { get; set; }
+        public IEnumerable<StatusHistoryModel> StatusHistory { get; set; }
 
         public static TicketListResponseModel GetTickets(int page = 1)
         {
             var ep = new EndPoint(TomTicket.Token).GetTicketsEndPoint(page);
-            var response = HttpHandler.GetResponse(ep);
+            var response = HttpHandler.GetResponse(ep);           
 
             var obj = response.ToObject<TicketListResponseModel>();
 
