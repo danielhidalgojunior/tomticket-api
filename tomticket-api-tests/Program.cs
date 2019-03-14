@@ -16,7 +16,7 @@ namespace tomticket_api_tests
             xConsole.OpenChar = '<';
             xConsole.CloseChar = '>';
 
-            new TomTicket("48bdb862b59308b7ef13b3f5ab3640b1");
+            new TomTicket("xxx");
             var token = TomTicket.Token;
 
             // Get Clients
